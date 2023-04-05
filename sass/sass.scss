@@ -36,8 +36,8 @@ img{
     .nosotros .contenedorNosotros{
         grid-template-columns: repeat(1, 100%);
     }
-    .visitas{
-        width: 100%;
+    .article{
+        width: 300px;
     }
     }
 
@@ -48,8 +48,8 @@ img{
     .recorridos .contenedorRec{
         grid-template-columns: repeat(2, 50%);
     }
-    .visitas{
-        width: 100%;
+    .article{
+        width: 700px;
     }
     }
 
@@ -61,7 +61,7 @@ img{
         grid-template-columns: 50% 50%;
         grid-template-rows: 25% 25%;
     }
-    .visitas{
+    .article{
     width: 100%;
     }
     }
