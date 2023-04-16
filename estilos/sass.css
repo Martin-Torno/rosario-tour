@@ -67,7 +67,6 @@ footer .footer {
 img {
   height: 100%;
   width: 100%;
-  width: 100%;
 }
 
 .galeria .contenedor {
@@ -80,21 +79,6 @@ img {
 
 .nosotros .contenedorNosotros {
   display: grid;
-}
-
-.contenedorVisitas {
-  display: flex;
-  flex-direction: row;
-  background: rgb(41, 15, 15);
-  padding: 25px;
-  margin-bottom: 0%;
-  justify-content: space-between;
-}
-
-.texto {
-  padding-left: 25px;
-  color: rgb(233, 159, 159);
-  font-size: 25px;
 }
 
 @media (min-width: 320px) {
@@ -155,7 +139,7 @@ img {
 }
 
 .visitas {
-  width: 600px;
+  width: 550px;
   height: 450px;
   border-radius: 10%;
   margin: auto;
@@ -192,4 +176,10 @@ ol li {
 .mapa {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.contenedorLogo .logo {
+  display: flex;
+  width: 550px;
+  height: 400px;
 }
