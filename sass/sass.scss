@@ -2,26 +2,39 @@
 @import "_navbar.scss";
 @import "_footer.scss";
 @import "_mixin.scss";
-/*GRID EN PAGINA DE INICIO Y RECORRIDOS*/
+/*RESPONSIVE EN PAGINA DE INICIO Y RECORRIDOS*/
 .contenedor{
     width: 100%;
     margin: auto;
 }
 .imagen{
-    margin: 5px;
+    margin: 8px;
 }
 img{
-    @include size (100%, 100%)
+    @include size (100%, 100%);
+    width: 100%;
 }
 .galeria .contenedor{
     display: grid;
 }
 .visitas{
-    display: grid;
-    grid-template-columns: repeat(1);
+    display: flex;
 }
 .nosotros .contenedorNosotros{
     display: grid;
+}
+.contenedorVisitas{
+    display: flex;
+    flex-direction: row;
+    background: rgb(41, 15, 15);
+    padding: 25px;
+    margin-bottom: 0%;
+    justify-content: space-between;
+}
+.texto{
+    padding-left: 25px;
+    color: rgb(233, 159, 159);
+    font-size: 25px;
 }
 @media(min-width:320px){
     .galeria .contenedor{
@@ -29,15 +42,6 @@ img{
     }
     .recorridos .contenedorRec {
         grid-template-columns: repeat(1, 100%);
-    }
-    .responsiveVisitas .contenedorVisitas{
-        grid-template-columns: repeat(1, 100%);
-    }
-    .nosotros .contenedorNosotros{
-        grid-template-columns: repeat(1, 100%);
-    }
-    .article{
-        width: 300px;
     }
     }
 
@@ -48,9 +52,6 @@ img{
     .recorridos .contenedorRec{
         grid-template-columns: repeat(2, 50%);
     }
-    .article{
-        width: 700px;
-    }
     }
 
 @media(min-width:1024px){
@@ -60,9 +61,6 @@ img{
     .recorridos .contenedorRec {
         grid-template-columns: 50% 50%;
         grid-template-rows: 25% 25%;
-    }
-    .article{
-    width: 100%;
     }
     }
 
@@ -92,8 +90,8 @@ img{
 }
 /*Estilo imagenes en pagina de nosotros y visitas**/
 .visitas:hover{
-    width: 700px;
-    height: 550px;
+    width: 650px;
+    height: 500px;
 }
 .visitas{
     width: 600px;
@@ -103,7 +101,6 @@ img{
     margin-bottom: 50px;
     transition: all 2s;
 }
-
 /*Estilo imagenes en pagina recorrido**/
 .contenedorRec{
     margin: auto;

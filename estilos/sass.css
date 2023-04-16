@@ -5,6 +5,7 @@
 
 /*CUERPO DEL SITIO Y TEXTOS*/
 body {
+  margin: 0;
   background-color: blanchedalmond;
 }
 
@@ -30,10 +31,16 @@ section p {
   margin-bottom: 50px;
 }
 
+div {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 /* BARRA DE NAVEGACION */
 .container-fluid {
   background-color: rgb(250, 42, 42);
   padding: 20px;
+  border-color: rgb(250, 42, 42);
 }
 
 /*PIE DE PAGINA*/
@@ -47,18 +54,19 @@ footer .footer {
   height: 70px;
 }
 
-/*GRID EN PAGINA DE INICIO Y RECORRIDOS*/
+/*RESPONSIVE EN PAGINA DE INICIO Y RECORRIDOS*/
 .contenedor {
   width: 100%;
   margin: auto;
 }
 
 .imagen {
-  margin: 5px;
+  margin: 8px;
 }
 
 img {
   height: 100%;
+  width: 100%;
   width: 100%;
 }
 
@@ -67,12 +75,26 @@ img {
 }
 
 .visitas {
-  display: grid;
-  grid-template-columns: repeat(1);
+  display: flex;
 }
 
 .nosotros .contenedorNosotros {
   display: grid;
+}
+
+.contenedorVisitas {
+  display: flex;
+  flex-direction: row;
+  background: rgb(41, 15, 15);
+  padding: 25px;
+  margin-bottom: 0%;
+  justify-content: space-between;
+}
+
+.texto {
+  padding-left: 25px;
+  color: rgb(233, 159, 159);
+  font-size: 25px;
 }
 
 @media (min-width: 320px) {
@@ -82,15 +104,6 @@ img {
   .recorridos .contenedorRec {
     grid-template-columns: repeat(1, 100%);
   }
-  .responsiveVisitas .contenedorVisitas {
-    grid-template-columns: repeat(1, 100%);
-  }
-  .nosotros .contenedorNosotros {
-    grid-template-columns: repeat(1, 100%);
-  }
-  .article {
-    width: 300px;
-  }
 }
 @media (min-width: 768px) {
   .galeria .contenedor {
@@ -98,9 +111,6 @@ img {
   }
   .recorridos .contenedorRec {
     grid-template-columns: repeat(2, 50%);
-  }
-  .article {
-    width: 700px;
   }
 }
 @media (min-width: 1024px) {
@@ -110,9 +120,6 @@ img {
   .recorridos .contenedorRec {
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 25%;
-  }
-  .article {
-    width: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -143,8 +150,8 @@ img {
 
 /*Estilo imagenes en pagina de nosotros y visitas**/
 .visitas:hover {
-  width: 700px;
-  height: 550px;
+  width: 650px;
+  height: 500px;
 }
 
 .visitas {

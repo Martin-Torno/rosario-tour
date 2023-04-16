@@ -6,6 +6,7 @@
 /*CUERPO DEL SITIO Y TEXTOS*/
 
 body{
+    margin: 0;
     background-color: blanchedalmond;
 }
 
@@ -33,4 +34,8 @@ p{
     margin: 20px;
     margin-bottom: 50px;
 }
+}
+div{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
