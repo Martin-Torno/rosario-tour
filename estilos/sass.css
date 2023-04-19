@@ -73,10 +73,6 @@ img {
   display: grid;
 }
 
-.visitas {
-  display: flex;
-}
-
 .nosotros .contenedorNosotros {
   display: grid;
 }
@@ -88,6 +84,12 @@ img {
   .recorridos .contenedorRec {
     grid-template-columns: repeat(1, 100%);
   }
+  article .visitas {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    height: 100%;
+    width: 100%;
+  }
 }
 @media (min-width: 768px) {
   .galeria .contenedor {
@@ -95,6 +97,12 @@ img {
   }
   .recorridos .contenedorRec {
     grid-template-columns: repeat(2, 50%);
+  }
+  article .visitas {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    height: 100%;
+    width: 100%;
   }
 }
 @media (min-width: 1024px) {
@@ -104,15 +112,33 @@ img {
   .recorridos .contenedorRec {
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 25%;
+    height: 1000px;
+    width: 1200px;
+  }
+  article .visitas {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    width: 550px;
+    height: 450px;
   }
 }
 @media (min-width: 1200px) {
   .galeria .contenedor {
     grid-template-columns: repeat(2, 50%);
+    height: 900px;
+    width: 1200px;
   }
   .recorridos .contenedorRec {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
+    height: 1000px;
+    width: 1200px;
+  }
+  article .visitas {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    width: 550px;
+    height: 450px;
   }
 }
 /** Estilo de formulario extraido de bootstrap para la pagina contacto **/
@@ -139,6 +165,7 @@ img {
 }
 
 .visitas {
+  display: grid;
   width: 550px;
   height: 450px;
   border-radius: 10%;
@@ -176,10 +203,4 @@ ol li {
 .mapa {
   margin-top: 40px;
   margin-bottom: 40px;
-}
-
-.contenedorLogo .logo {
-  display: flex;
-  width: 550px;
-  height: 400px;
 }
