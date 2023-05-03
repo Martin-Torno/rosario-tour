@@ -35,7 +35,12 @@ p{
     margin-bottom: 50px;
 }
 }
-div{
+.mapa iframe{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
     margin-top: 0px;
     margin-bottom: 0px;
+    justify-items: center;
+    width: 550px;
+    height: 450px;
 }

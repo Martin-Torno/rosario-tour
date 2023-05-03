@@ -9,6 +9,8 @@
 }
 .imagen{
     margin: 8px;
+    border-style: solid;
+    border-color: red
 }
 img{
     @include size (100%, 100%);
@@ -31,6 +33,17 @@ img{
         grid-template-columns: repeat(1, 100%);
         height: 100%;
         width: 100%;
+        transition: none;
+    }
+    .visitas :hover{
+        width: auto;
+        height: auto;
+    }
+    .mapa iframe{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        height: 100%;
+        width: 100%;
     }
     }
 
@@ -44,8 +57,19 @@ img{
     article .visitas{
         display: grid;
         grid-template-columns: repeat(1,100%);
-        height: 100%;
-        width: 100%;
+        height: 50%;
+        width: 50%;
+        transition: none;
+    }
+    .visitas :hover{
+        width: auto;
+        height: auto;
+    }
+    .mapa iframe{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        height: 50%;
+        width: 50%;
     }
     }
 
@@ -64,6 +88,17 @@ img{
         grid-template-columns: repeat(1,100%);
         width: 550px;
         height: 450px;
+        transition: all 2s;
+    }
+    .visitas:hover{
+        width: 570px;
+        height: 470px;
+    }
+    .mapa iframe{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        height: 450px;
+        width: 550px;
     }
     }
 
@@ -85,6 +120,16 @@ img{
         width: 550px;
         height: 450px;
     }
+    .visitas:hover{
+        width: 570px;
+        height: 470px;
+    }
+    .mapa iframe{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        width: 550px;
+        height: 450px;
+    }
 }
 /** Estilo de formulario extraido de bootstrap para la pagina contacto **/
 .formulario {
@@ -102,10 +147,7 @@ img{
         padding: 20px;
 }
 /*Estilo imagenes en pagina de nosotros y visitas**/
-.visitas:hover{
-    width: 650px;
-    height: 500px;
-}
+
 .visitas{
     display: grid;
     width: 550px;
@@ -121,9 +163,11 @@ img{
     width: 100%;
     margin-top: none;
     margin-block-start: none;
-    .foto{
-    margin: 5px;
 }
+.foto{
+    margin: 5px;
+    border-style: solid;
+    border-color: red;
 }
 .recorridos .contenedorRec{
     display: grid;
@@ -138,6 +182,8 @@ ol li{
     margin-bottom: 50px;
 }
 .mapa{
+    display: grid;
+    justify-content: center;
     margin-top: 40px;
     margin-bottom: 40px;
 }
