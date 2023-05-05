@@ -2,6 +2,9 @@
 @import "_navbar.scss";
 @import "_footer.scss";
 @import "_mixin.scss";
+
+/* VARIABLE PARA COLOR EN BORDE DE PAGINAS INICIO Y RECORRIDOS*/
+$bordeImg: red;
 /*RESPONSIVE EN PAGINA DE INICIO Y RECORRIDOS*/
 .contenedor{
     width: 100%;
@@ -10,7 +13,7 @@
 .imagen{
     margin: 8px;
     border-style: solid;
-    border-color: red
+    border-color: $bordeImg;
 }
 img{
     @include size (100%, 100%);
@@ -91,8 +94,8 @@ img{
         transition: all 2s;
     }
     .visitas:hover{
-        width: 570px;
-        height: 470px;
+        width: 560px;
+        height: 460px;
     }
     .mapa iframe{
         display: grid;
@@ -121,8 +124,8 @@ img{
         height: 450px;
     }
     .visitas:hover{
-        width: 570px;
-        height: 470px;
+        width: 560px;
+        height: 460px;
     }
     .mapa iframe{
         display: grid;
@@ -154,7 +157,7 @@ img{
     height: 450px;
     border-radius: 10%;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     transition: all 2s;
 }
 /*Estilo imagenes en pagina recorrido**/
@@ -167,7 +170,7 @@ img{
 .foto{
     margin: 5px;
     border-style: solid;
-    border-color: red;
+    border-color: $bordeImg;
 }
 .recorridos .contenedorRec{
     display: grid;
